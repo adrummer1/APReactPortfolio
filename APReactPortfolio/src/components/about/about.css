@@ -1,24 +1,21 @@
 #about {
-    height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
-    overflow: hidden;
-    position: relative;
+    display: flex;
+    flex-direction: row;
 }
 
 .me {
-    position: absolute;
-    right: 0;
-    z-index: -1;
+    margin-right: 4rem;
     object-fit: cover;
     height: 65vh;
     border-radius: 2rem;
 }
 
 .aboutContent {
-    height: 100vh;
-    width: 100vw;
+    height: 80vh;
+    width: 50vw;
     padding: 2rem;
     font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -40,8 +37,8 @@
 }
 
 @media screen and (max-width:840px) {
-    .bg {
-        right: -10vw
+    .me {
+        
     }
     .introContent {
         font-size: 10vw;
@@ -52,8 +49,14 @@
     
 }
 
+@media screen and (max-width:600px) {
+    #about {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width:480px) {
-    .bg {
-        right: -20vw
+    .me {
+        display: none;
     }
 }
