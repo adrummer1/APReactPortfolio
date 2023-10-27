@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import '../navbar/navbar.css';
-import logo from '../../assets/logo.jpeg';
+import logo from '../../assets/Aperkins.png';
 import { Link } from 'react-scroll';
 import hamenu from '../../assets/hamenu.jpeg';
 
