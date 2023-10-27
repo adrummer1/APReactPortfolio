@@ -1,21 +1,34 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, { useState } from 'react';
 import '../navbar/navbar.css';
 import logo from '../../assets/logo.jpeg';
 import { Link } from 'react-scroll';
+import hamenu from '../../assets/hamenu.jpeg';
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <nav className="navbar">
       <img src={logo} alt="logo" className="logo"/>
       <div className="desktopMenu">
-        <Link className="desktopMenuListItem">Home</Link>
-        <Link className="desktopMenuListItem">About</Link>
-        <Link className="desktopMenuListItem">Portfolio</Link>
-        <Link className="desktopMenuListItem">Resume</Link>
+        <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
+        <Link activeClass='active' to='about' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
+        <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Portfolio</Link>
+        <Link activeClass='active' to='resume' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Resume</Link>
       </div>
-      <button className="desktopMenuBtn">
-        <img src="" alt="" className="desktopMenuImg" />Contact</button>
+      <button className="desktopMenuBtn" onClick={() => {
+        document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+      }}>
+        <img src="" alt="" className="desktopMenuImg" />Contact Me</button>
+
+        <img src={hamenu} alt="Menu" className='hamenu' onClick={()=>setShowMenu(!showMenu)}/>
+        <div className="navMenu" style={{display: showMenu? 'flex':'none'}}>
+          <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
+          <Link activeClass='active' to='about' spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
+          <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Portfolio</Link>
+          <Link activeClass='active' to='resume' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Resume</Link>
+          <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Contact</Link>
+      </div>
     </nav>
   )
 }
@@ -23,57 +36,3 @@ const Navbar = () => {
 export default Navbar
 
 
-
-// function Navigation({ currentPage, handlePageChange }) {
-//     return (
-//       <ul className="nav nav-tabs">
-//         <li className="nav-item">
-//           <a
-//             href="#home"
-//             onClick={() => handlePageChange('Home')}
-//             className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-//           >
-//             Home
-//           </a>
-//         </li>
-//         <li className="nav-item">
-//           <a
-//             href="#about"
-//             onClick={() => handlePageChange('About')}
-//             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-//           >
-//             About
-//           </a>
-//         </li>
-//         <li className="nav-item">
-//           <a
-//             href="#portfolio"
-//             onClick={() => handlePageChange('Portfolio')}
-//             className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-//           >
-//             Portfolio
-//           </a>
-//         </li>
-//         <li className="nav-item">
-//           <a
-//             href="#contact"
-//             onClick={() => handlePageChange('Contact')}
-//             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-//           >
-//             Contact
-//           </a>
-//         </li>
-//         <li className="nav-item">
-//           <a
-//             href="#resume"
-//             onClick={() => handlePageChange('Resume')}
-//             className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-//           >
-//             Resume
-//           </a>
-//         </li>
-//       </ul>
-//     );
-//   }
-  
-//   export default Navigation;
