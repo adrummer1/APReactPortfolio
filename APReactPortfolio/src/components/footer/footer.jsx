@@ -8,9 +8,9 @@ import facebook from '../../assets/facebook.png';
 const Footer = () => {
     return (
         <footer className='footer'>
-            <a href="https://github.com/adrummer1"><img src={github}></img></a>
-            <a className="linkedin" href="https://www.linkedin.com/in/andrew-perkins-8bb09726/"><img src={linkedin}></img></a>
-            <a className="facebook" href="https://www.facebook.com/andrew.perkins.1422"><img src={facebook}></img></a>
+            <a href="https://github.com/adrummer1">GitHub</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/andrew-perkins-8bb09726/">LinkedIn</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="https://www.facebook.com/andrew.perkins.1422">Facebook</a>
         </footer>
     )
 }
