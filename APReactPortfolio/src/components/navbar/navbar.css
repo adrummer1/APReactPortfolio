@@ -43,6 +43,11 @@
     border-radius: 2rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.desktopMenuBtn:hover {
+    background: lightblue;
 }
 
 .desktopMenuImage {
