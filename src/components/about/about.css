@@ -53,6 +53,13 @@
 @media screen and (max-width:600px) {
     #about {
         flex-direction: column;
+        margin: .2rem;
+    }
+    .aboutContent {
+        width: 100vw;
+    }
+    .me {
+        margin: 2rem;
     }
 }
 

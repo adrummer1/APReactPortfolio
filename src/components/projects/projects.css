@@ -45,3 +45,10 @@
 .link:hover {
     color: lightblue;
 }
+
+@media screen and (max-width:600px) {
+    .projectImg {
+    margin: .75rem;
+    width: 95%;
+    }
+}

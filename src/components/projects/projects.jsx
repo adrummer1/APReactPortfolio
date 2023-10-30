@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <section id='projects'>
       <h2 className="projectsTitle">My Projects</h2>
-      <div className="projectImgs">
+      <div>
         <img src={Project1} alt="" className="projectImg" />
         <a className="link" href="https://still-eyrie-95093-c11411e8dfb7.herokuapp.com/">View Deployed Application</a>
         <a className="link" href="https://github.com/adrummer1/PWATextEditorAP">View On GitHub</a>
