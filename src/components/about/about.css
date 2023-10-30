@@ -1,3 +1,4 @@
+/* Style for About section */
 #about {
     width: 100vw;
     max-width: 75rem;
@@ -60,6 +61,7 @@
     }
     .me {
         margin: 2rem;
+        object-fit:contain;
     }
 }
 

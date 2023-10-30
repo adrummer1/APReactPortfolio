@@ -5,6 +5,7 @@ import logo from '../../assets/Aperkins.png';
 import { Link } from 'react-scroll';
 import hamenu from '../../assets/hamenu.jpeg';
 
+// Displaying Navbar to include logo (name), navigation links, and contact button
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (

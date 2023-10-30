@@ -1,3 +1,4 @@
+/* Style for contact form and section */
 .form {
     margin: 30px;
     display: flex;
@@ -30,6 +31,7 @@
 
   .submit {
     width: 10%;
+    min-width: 100px;
     height: 3rem;
     margin-top: 1rem;
     background: lightblue;

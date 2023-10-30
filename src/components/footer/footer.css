@@ -1,4 +1,5 @@
-.footer {
+/* Style for footer */
+.footer, .footer-icon {
     width: 100vw;
     height: 4rem;
     background: white;
@@ -11,7 +12,20 @@
     font-weight: 300;
 }
 
+.footer-icon {
+    display:none;
+}
+
 .github {
     height: 2px;
     width: 2px;
+}
+
+@media screen and (max-width:600px) {
+    .footer-icon {
+        display: flex;
+    }
+    .footer {
+        display: none;
+    }
 }

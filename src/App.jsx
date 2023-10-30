@@ -5,6 +5,7 @@ import Resume from './components/resume/resume';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 
+// Displaying all six components
 function App() {
     return (
         <div className="App">

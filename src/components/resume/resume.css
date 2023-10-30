@@ -1,9 +1,18 @@
+/* Style for resume section */
 .resume {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
     padding: 2rem;
     text-align: center;
     width: 100%;
+}
+
+.pdf {
+    display: none;
+}
+
+.pdf-full {
+    display: block;
 }
 
 .pdf-container {
@@ -17,5 +26,11 @@
     .pdf-container {
         width: 95%;
         margin: .5rem;
+    }
+    .pdf {
+        display: block;
+    }
+    .pdf-full {
+        display: none;
     }
 }

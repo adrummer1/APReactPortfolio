@@ -1,3 +1,4 @@
+/* Styling for projects */
 #projects {
     margin: 0 auto;
     min-height: calc(100vh - 4rem);
@@ -35,6 +36,12 @@
     display: flex;
 }
 
+.title {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+
 .link {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -48,6 +55,7 @@
 
 @media screen and (max-width:600px) {
     .projectImg {
+        object-fit:contain;
     margin: .75rem;
     width: 95%;
     }

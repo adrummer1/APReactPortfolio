@@ -4,6 +4,7 @@ import React from 'react';
 import '../about/about.css';
 import me from '../../assets/me.jpeg';
 
+// Displaying about section that includes a paragraph and image
 const About = () => {
   return (
     <section id="about">
