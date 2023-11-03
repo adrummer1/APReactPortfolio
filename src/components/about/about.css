@@ -30,7 +30,8 @@
 }
 
 .title {
-    color: lightblue;
+    color: lightblue !important;
+    font-size: 2rem !important;
 }
 
 .btn {
