@@ -1,19 +1,14 @@
 import Navbar from './components/navbar/navbar';
-import About from './components/about/about';
-import Projects from './components/projects/projects';
-import Resume from './components/resume/resume';
-import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
+import { Outlet } from 'react-router-dom';
 
 // Displaying all six components
 function App() {
+
     return (
         <div className="App">
             <Navbar />
-            <About />
-            <Projects />
-            <Resume />
-            <Contact />
+            <Outlet />
             <Footer />
         </div>
     )
